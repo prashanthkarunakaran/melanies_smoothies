@@ -10,8 +10,7 @@ st.write(
     """Choose the fruit you want in your custom smoothie"""
 )
   
-smoothiefroot_response = requests.get("[https://my.smoothiefroot.com/api/fruit/watermelon](https://my.smoothiefroot.com/api/fruit/watermelon)")  
-st.text(smoothiefroot_response)
+
 # Input
 name_on_order = st.text_input("Name on Smoothie:")
 
@@ -38,7 +37,8 @@ ingredients_list = st.multiselect(
     fruit_list,
     max_selections=5
 )
-
+smoothiefroot_response = requests.get("[https://my.smoothiefroot.com/api/fruit/watermelon](https://my.smoothiefroot.com/api/fruit/watermelon)")  
+st.text(smoothiefroot_response)
 if ingredients_list:
 
     ingredients_string = ",".join(ingredients_list)
