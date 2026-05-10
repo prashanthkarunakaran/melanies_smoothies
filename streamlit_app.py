@@ -55,7 +55,7 @@ if ingredients_list:
         sf_df=st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
 if ingredients_list:
 
-    ingredients_string = ",".join(ingredients_list)
+    ingredients_string = " ".join(ingredients_list)
 
     st.write(ingredients_string)
 
