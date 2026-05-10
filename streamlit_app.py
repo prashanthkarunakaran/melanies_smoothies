@@ -12,7 +12,7 @@ st.write(
   """
 )
 
-from snowflake.snowpark.functions import col
+
 
 #option = st.selectbox(
 #    'What is your favourite fruit?',
